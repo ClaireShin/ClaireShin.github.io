@@ -1,0 +1,53 @@
+body{font-family: NanumSquareOTF_ac; font-style: normal; font-weight: normal; font-size: 16px; line-height: 28px;text-align: center; margin: 0px;}
+
+/* 텍스트 서식 정의 */
+h1 {font-family: 'Yrsa', serif; font-style: normal; font-weight: 300; font-size: 35px; line-height: 29px; color:#9E7D58; margin-bottom: 0px;}
+h2 {font-family: NanumSquareOTF_ac; font-style: normal; font-weight: bold; font-size: 16px; line-height: 27px; text-align: center;}
+h3 {font-family: NanumSquareOTF_ac; font-style: normal; font-weight: bold; font-size: 14px; line-height: 27px; margin-bottom: 0px;}
+.strong{font-weight: 500;}
+.couplename{color: #9E7D58; margin-top: 8px;}
+.message{font-size: 14px; background-color: #fff; padding: 20px;}
+.pause p {font-size: 12px; line-height: 20px; color: #9E7D58; margin-top: 16px; margin-bottom: 24px;}
+.letter h2 {margin-top: 4px; margin-bottom: 0px;}
+.letter {font-size: 14px; text-align: left; padding: 20px; background-color: #fff; margin-top: 4px;}
+.letter p{margin-bottom: 0px;}
+.footer p {font-family: 'Yrsa', serif; font-size: 13px; line-height: 20px; color:#9E7D58; margin-top: 24px; margin-bottom: 4px;}
+.account{font-size: 14px;}
+.map{font-size: 14px; max-width: 460px; height: auto;}
+
+
+/* 배경 컬러, 패딩 정의 */
+#part1 {background-color: #F3F2EF;}
+#part2 {background-color: #F3F2EF; padding: 20px; padding-bottom: 0px;}
+#part3 {background-color: #FFF; padding-top: 10px; padding-left:20px; padding-right:20px;}
+#part4 {background-color: #F3F2EF; padding: 20px;}
+
+
+/* Part 1 */
+.title {position: relative;}
+.titletext {position: absolute; top: 20%; left:50%; transform: translate( -50%, -50% );}
+.titlephoto{margin: 0 auto;}
+
+
+/* Part 2 */
+.info{text-align: center;}
+.dateimg{margin-bottom: 20px;}    
+.name {display: flex; text-align: left; padding: 16px 52px; background-color: #fff; margin-top: 4px;}
+.child{width: 26%; text-align: right; margin-left: 20px;}
+.location {background-color: #fff; padding: 16px; margin-top: 4px; margin-bottom: 8px;}
+.flowerimg {margin-top: 8px; margin-bottom: 8px;}
+
+
+/* Part 3 */
+.photo {background-color: #fff; display: block; overflow: hidden; box-sizing: border-box;}
+.photo img {margin-top: 10px;}
+.subway{text-align: left;}
+.bus{text-align: left;}
+.car{text-align: left;}
+.detail {margin-top: 0px;}
+
+
+/* Part 4 */
+.broom{padding: 16px; background-color: #fff; margin-top: 4px;}
+.bride{padding: 16px; background-color: #fff; margin-top: 4px;}
+
