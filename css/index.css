@@ -16,6 +16,7 @@ h3 {font-family: NanumSquareOTF_ac; font-style: normal; font-weight: bold; font-
 
 
 /* 배경 컬러, 패딩 정의 */
+#background {background-color: #FFFFFF;}
 #part1, #part2, #part3, #part4 {max-width: 460px; margin: 0 auto;}
 #part1 {background-color: #F3F2EF;}
 #part2 {background-color: #F3F2EF; padding: 20px; padding-bottom: 0px;}
