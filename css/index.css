@@ -9,11 +9,11 @@ h3 {font-family: NanumSquareOTF_ac; font-style: normal; font-weight: bold; font-
 .message{font-size: 14px; background-color: #fff; padding: 20px;}
 .pause p {font-size: 12px; line-height: 20px; color: #9E7D58; margin-top: 16px; margin-bottom: 24px;}
 .letter h2 {margin-top: 4px; margin-bottom: 0px;}
-.letter {font-size: 14px; text-align: left; padding: 20px; background-color: #fff; margin-top: 4px;}
+.letter {font-size: 16px; text-align: left; padding: 20px; background-color: #fff; margin-top: 4px;}
 .letter p{margin-bottom: 0px;}
 .footer p {font-family: 'Yrsa', serif; font-size: 13px; line-height: 20px; color:#9E7D58; margin-top: 24px; margin-bottom: 4px;}
-.account{font-size: 14px;}
-.map{font-size: 14px; max-width: 460px; height: auto;}
+.account{font-size: 16px;}
+.map{font-size: 16px; max-width: 460px; height: auto;}
 
 
 /* 배경 컬러, 패딩 정의 */
