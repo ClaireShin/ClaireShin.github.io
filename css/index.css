@@ -33,7 +33,7 @@ h3 {font-family: NanumSquareOTF_ac; font-style: normal; font-weight: bold; font-
 /* Part 2 */
 .info{text-align: center;}
 .dateimg {margin-bottom: 20px;}    
-.name {width:215px; display: flex; text-align: left; padding: 16px; background-color: #fff; margin-top: 4px;}
+.name {display: flex; text-align: left; padding: 16px; background-color: #fff; margin-top: 4px;}
 .parent {width: 50%;}
 .child {width: 50%; text-align: right; margin-left: 20px;}
 .location {background-color: #fff; padding: 16px; margin-top: 4px; margin-bottom: 8px;}
