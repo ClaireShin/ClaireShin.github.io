@@ -13,6 +13,7 @@ h3 {font-family: NanumSquareOTF_ac; font-style: normal; font-weight: bold; font-
 .letter p{margin-bottom: 0px;}
 .footer p {font-family: 'Yrsa', serif; font-size: 13px; line-height: 20px; color:#9E7D58; margin-top: 40px; margin-bottom: 40px;}
 .map {max-width: 460px; height: auto;}
+.map p {line-hight: 24px} 
 
 
 /* 배경 컬러, 패딩 정의 */
@@ -26,7 +27,7 @@ h3 {font-family: NanumSquareOTF_ac; font-style: normal; font-weight: bold; font-
 
 /* Part 1 */
 .title {position: relative;}
-.titletext {width:220px; position: absolute; top: 20%; left:50%; transform: translate( -50%, -50% );}
+.titletext {width: 220px; position: absolute; top: 20%; left:50%; transform: translate( -50%, -50% );}
 .titlephoto{margin: 0 auto; padding-top;20px;}
 
 
@@ -35,8 +36,8 @@ h3 {font-family: NanumSquareOTF_ac; font-style: normal; font-weight: bold; font-
 .dateimg {margin-bottom: 20px;}    
 .name {padding: 16px; background-color: #fff; margin-top: 4px;}
 .wrap {width:220px; display: flex; margin: 0 auto;}
-.parent {width: 65%; text-align: left;}
-.child {width: 35%; text-align: right;}
+.parent {width: 60%; text-align: left;}
+.child {width: 40%; text-align: right;}
 .location {background-color: #fff; padding: 16px; margin-top: 4px; margin-bottom: 8px;}
 .flowerimg {margin-top: 8px; margin-bottom: 8px;}
 
