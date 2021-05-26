@@ -26,8 +26,8 @@ h3 {font-family: NanumSquareOTF_ac; font-style: normal; font-weight: bold; font-
 
 /* Part 1 */
 .title {position: relative;}
-.titletext {position: absolute; top: 20%; left:50%; transform: translate( -50%, -50% );}
-.titlephoto{margin: 0 auto;}
+.titletext {width:220px; position: absolute; top: 20%; left:50%; transform: translate( -50%, -50% );}
+.titlephoto{margin: 0 auto; padding-top;20px;}
 
 
 /* Part 2 */
