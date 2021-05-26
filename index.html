@@ -11,12 +11,12 @@
     <meta property="og:description" content="문재와 해나가 만드는 기쁨이 가득한 여름 날에 초대합니다">
     <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=3ecb80225cb04a4ad5d5fff0dbe6c722"></script>
     <script>
-		  var container = document.getElementById('map');
+		  var container = document.getElementById('mapTile');
 		  var options = {
 			  center: new kakao.maps.LatLng(33.450701, 126.570667),
 			  level: 3
 		    };
-		  var map = new kakao.maps.Map(container, options);
+		  var mapTile = new kakao.maps.Map(container, options);
 	  </script>
   <style>
       hr {opacity: 0.3; border: 1px solid #9E7D58;} 
@@ -83,12 +83,8 @@
         </div>
      </div>
      <div id="part4">
-        <div class="map" style="width:100%; height:460px;">
-<!--              <div class="kakaomap">
-                <a href="https://map.kakao.com/?urlX=490925&urlY=1102360&urlLevel=3&map_type=TYPE_MAP&map_hybrid=false" target="_blank">
-                    <img width="100%" max-width="460" height="auto" src="https://map2.daum.net/map/mapservice?FORMAT=PNG&SCALE=2.5&MX=490925&MY=1102360&S=0&IW=504&IH=310&LANG=0&COORDSTM=WCONGNAMUL&logo=kakao_logo" 
-                    style="border:1px solid #ccc"></a>
-            </div> -->
+        <div class="map">
+	    <div class="mapTile" style="width:100%; height:460px;"></div>
             <div class="subway">
                 <h3>지하철 &nbsp;|&nbsp; 2호선 낙성대 입구역 하차 (4번 출구)</h3>
                 <p class="detail">장블랑제리 제과점 옆에서 [관악 2번] 마을 버스 승차하여 호암교수회관에서 하차 </p>
