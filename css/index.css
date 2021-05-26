@@ -31,10 +31,10 @@ h2 {font-family: NanumSquareOTF_ac; font-style: normal; font-weight: bold; font-
 /* Part 2 */
 .info{text-align: center;}
 .dateimg {margin-bottom: 20px;}    
-.name {text-align: left; padding: 16px; background-color: #fff; margin-top: 4px;}
-.wrap {width:240px; display: flex;}
-.parent {width: 65%;}
-.child {width: 35%; text-align: right; margin-left: 20px;}
+.name {padding: 16px; background-color: #fff; margin-top: 4px;}
+.wrap {width:240px; display: flex; margin: 0 auto;}
+.parent {width: 65%; text-align: left;}
+.child {width: 35%; text-align: right;}
 .location {background-color: #fff; padding: 16px; margin-top: 4px; margin-bottom: 8px;}
 .flowerimg {margin-top: 8px; margin-bottom: 8px;}
 
