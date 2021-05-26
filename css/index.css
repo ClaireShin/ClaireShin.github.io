@@ -3,7 +3,7 @@ body{font-family: NanumSquareOTF_ac; font-style: normal; font-weight: normal; fo
 /* 텍스트 서식 정의 */
 h1 {font-family: 'Yrsa', serif; font-style: normal; font-weight: 300; font-size: 35px; line-height: 29px; color:#9E7D58; margin-bottom: 0px;}
 h2 {font-family: NanumSquareOTF_ac; font-style: normal; font-weight: bold; font-size: 16px; line-height: 24px; text-align: center;}
-h2 {font-family: NanumSquareOTF_ac; font-style: normal; font-weight: bold; font-size: 14px; line-height: 24px; text-align: left;}
+h3 {font-family: NanumSquareOTF_ac; font-style: normal; font-weight: bold; font-size: 14px; line-height: 24px; text-align: left;}
 .strong{font-weight: 500;}
 .couplename{color: #9E7D58; margin-top: 8px;}
 .message {background-color: #fff; padding: 20px;}
