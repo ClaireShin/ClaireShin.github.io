@@ -37,7 +37,7 @@ h3 {font-family: NanumSquareOTF_ac; font-style: normal; font-weight: bold; font-
 .name {padding: 16px; background-color: #fff; margin-top: 4px;}
 .wrap {width:220px; display: flex; margin: 0 auto;}
 .parent {width: 60%; text-align: left;}
-.child {width: 40%; text-align: right;}
+.child {width: 40%; text-align: right; display: flex; flex-direction: column; justify-content: center;}
 .location {background-color: #fff; padding: 16px; margin-top: 4px; margin-bottom: 8px;}
 .flowerimg {margin-top: 8px; margin-bottom: 8px;}
 
