@@ -2,132 +2,14 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
     <title>박문재, 그리고 신해나</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Yrsa:wght@500&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Yrsa:wght@500&display=swap" rel="stylesheet"/>
     <meta property="og:title" content="박문재, 그리고 신해나" />
-    <meta
-      property="og:description"
-      content="문재와 해나가 만드는 기쁨이 가득한 여름 날에 초대합니다"
-    />
+    <meta property="og:description" content="문재와 해나가 만드는 기쁨이 가득한 여름 날에 초대합니다"/>
     <meta property="og:image" content="https://munjae-haena.com/img_og.jpg">
-    <style>
-      hr {
-        opacity: 0.3;
-        border: 1px solid #9e7d58;
-      }
-      @import url("https://fonts.googleapis.com/css2?family=Yrsa:wght@300&display=swap");
-​
-      body {font-family: NanumSquareOTF_ac; font-style: normal; font-weight: normal; font-size: 14px; line-height: 28px; text-align: center; margin: 0;}
-​
-      /* 텍스트 서식 정의 */
-      h1 {font-family: 'Yrsa', serif; font-style: normal; font-weight: 300; font-size: 35px; line-height: 29px; color:#9E7D58; margin-bottom: 0px;}
-      h2 {font-family: NanumSquareOTF_ac; font-style: normal; font-weight: bold; font-size: 16px; line-height: 24px; text-align: center;}
-      h3 {font-family: NanumSquareOTF_ac; font-style: normal; font-weight: bold; font-size: 14px; line-height: 24px; text-align: left; margin-bottom: 4px;}
-      .couplename {color: #9E7D58; margin-top: 8px;}
-      .message {background-color: #fff; padding: 20px;}
-      .pause p {font-size: 12px; line-height: 20px; color: #9E7D58; margin-top: 24px; margin-bottom: 32px;}
-      .letter h2 {margin-top: 4px; margin-bottom: 0px;}
-      .letter {text-align: left; padding: 20px; background-color: #fff; margin-top: 4px;}
-      .letter p{margin-bottom: 0px;}
-      .footer p {font-family: 'Yrsa', serif; font-size: 13px; line-height: 20px; color:#9E7D58; margin-top: 40px; margin-bottom: 40px;}
-      .map {max-width: 460px; height: auto;}
-      .map p {line-hight: 24px}
-​
-      /* 배경 컬러, 패딩 정의 */
-      #background {background-color: #FFFFFF;}
-      #part1, #part2, #part3, #part4 {max-width: 460px; margin: 0 auto;}
-      #part1 {background-color: #F3F2EF; padding-left: 20px; padding-right:20px;}
-      #part2 {background-color: #F3F2EF; padding: 20px; padding-bottom: 13px;}
-      #part3 {background-color: #FFF; padding-top: 10px; padding-left:20px; padding-right:20px;}
-      #part4 {background-color: #F3F2EF; padding: 20px; padding-bottom: 40px;}
-​
-      /* Part 1 */
-      .title {position: relative;}
-      .titletext {width: 220px; position: absolute; top: 20%; left:50%; transform: translate( -50%, -50% );}
-      .titlephoto{margin: 0 auto; padding-top: 20px;}
-​
-      /* Part 2 */
-      .info{text-align: center;}
-      .dateimg {margin-bottom: 20px;}
-      .name {padding: 16px; background-color: #fff; margin-top: 4px;}
-      .wrap {width:220px; display: flex; margin: 0 auto;}
-      .parent {width: 60%; text-align: left;}
-      .child {width: 40%; text-align: right; display: flex; flex-direction: column; justify-content: center;}
-      .location {background-color: #fff; padding: 16px; margin-top: 4px; margin-bottom: 8px;}
-​
-      /* Part 3 */
-      .photo {background-color: #fff; display: block; overflow: hidden; box-sizing: border-box;}
-      .photo img {margin-top: 10px;}
-      .subway{text-align: left;}
-      .bus{text-align: left;}
-      .car{text-align: left;}
-      .detail {margin-top: 0px;}
-​
-      /* Part 4 */
-      .broom {padding: 16px; background-color: #fff; margin-top: 4px; color: #333333; font-size: 14px; cursor: pointer; }
-      .bride {padding: 16px; background-color: #fff; margin-top: 4px; color: #333333; font-size: 14px; cursor: pointer;}
-​
-      .bold {
-        font-weight: bold;
-      }
-​
-      .modal {
-        display: none;
-​
-        position: fixed;
-        z-index: 200;
-​
-        top: 50%;
-        left: 50%;
-​
-        transform: translate(-50%, -50%);
-​
-        max-width: 500px;
-        width: calc(100% - 40px);
-        height: 128px;
-​
-        margin: 0 auto;
-​
-        background-color: #ffffff;
-​
-        color: #333333;
-        font-size: 14px;
-      }
-​
-      .modal.visible {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        flex: 1;
-      }
-​
-      .dimmed {
-        display: none;
-​
-        position: fixed;
-        z-index: 100;
-​
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-​
-        background-color: rgba(0, 0, 0, .60);
-      }
-​
-      .dimmed.visible {
-        display: block;
-      }
-    </style>
   </head>
   <body>
     <div id="background">
@@ -168,9 +50,7 @@
           </div>
           <div class="location">
             <p>
-              2021. 07. 03 토요일 오후 5시 <br /><strong
-                >서울대학교 호암교수회관 웨딩홀</strong
-              >
+              2021. 07. 03 토요일 오후 5시 <br/><strong>서울대학교 호암교수회관 웨딩홀</strong>
             </p>
           </div>
         </div>
