@@ -1,133 +1,296 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+    />
     <title>박문재, 그리고 신해나</title>
-    <link rel="stylesheet" type="text/css" href="css/index.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Yrsa:wght@500&display=swap" rel="stylesheet">
-    <meta property="og:title" content="박문재, 그리고 신해나">
-    <meta property="og:description" content="문재와 해나가 만드는 기쁨이 가득한 여름 날에 초대합니다">
-  <style>
-      hr {opacity: 0.3; border: 1px solid #9E7D58;} 
-      @import url('https://fonts.googleapis.com/css2?family=Yrsa:wght@300&display=swap');
-  </style>
-</head>
- <body>
-   <div id="background">
-     <div id="part1">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Yrsa:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <meta property="og:title" content="박문재, 그리고 신해나" />
+    <meta
+      property="og:description"
+      content="문재와 해나가 만드는 기쁨이 가득한 여름 날에 초대합니다"
+    />
+    <meta property="og:image" content="https://munjae-haena.com/img_og.jpg">
+    <style>
+      hr {
+        opacity: 0.3;
+        border: 1px solid #9e7d58;
+      }
+      @import url("https://fonts.googleapis.com/css2?family=Yrsa:wght@300&display=swap");
+​
+      body {font-family: NanumSquareOTF_ac; font-style: normal; font-weight: normal; font-size: 14px; line-height: 28px; text-align: center; margin: 0;}
+​
+      /* 텍스트 서식 정의 */
+      h1 {font-family: 'Yrsa', serif; font-style: normal; font-weight: 300; font-size: 35px; line-height: 29px; color:#9E7D58; margin-bottom: 0px;}
+      h2 {font-family: NanumSquareOTF_ac; font-style: normal; font-weight: bold; font-size: 16px; line-height: 24px; text-align: center;}
+      h3 {font-family: NanumSquareOTF_ac; font-style: normal; font-weight: bold; font-size: 14px; line-height: 24px; text-align: left; margin-bottom: 4px;}
+      .couplename {color: #9E7D58; margin-top: 8px;}
+      .message {background-color: #fff; padding: 20px;}
+      .pause p {font-size: 12px; line-height: 20px; color: #9E7D58; margin-top: 24px; margin-bottom: 32px;}
+      .letter h2 {margin-top: 4px; margin-bottom: 0px;}
+      .letter {text-align: left; padding: 20px; background-color: #fff; margin-top: 4px;}
+      .letter p{margin-bottom: 0px;}
+      .footer p {font-family: 'Yrsa', serif; font-size: 13px; line-height: 20px; color:#9E7D58; margin-top: 40px; margin-bottom: 40px;}
+      .map {max-width: 460px; height: auto;}
+      .map p {line-hight: 24px}
+​
+      /* 배경 컬러, 패딩 정의 */
+      #background {background-color: #FFFFFF;}
+      #part1, #part2, #part3, #part4 {max-width: 460px; margin: 0 auto;}
+      #part1 {background-color: #F3F2EF; padding-left: 20px; padding-right:20px;}
+      #part2 {background-color: #F3F2EF; padding: 20px; padding-bottom: 13px;}
+      #part3 {background-color: #FFF; padding-top: 10px; padding-left:20px; padding-right:20px;}
+      #part4 {background-color: #F3F2EF; padding: 20px; padding-bottom: 40px;}
+​
+      /* Part 1 */
+      .title {position: relative;}
+      .titletext {width: 220px; position: absolute; top: 20%; left:50%; transform: translate( -50%, -50% );}
+      .titlephoto{margin: 0 auto; padding-top: 20px;}
+​
+      /* Part 2 */
+      .info{text-align: center;}
+      .dateimg {margin-bottom: 20px;}
+      .name {padding: 16px; background-color: #fff; margin-top: 4px;}
+      .wrap {width:220px; display: flex; margin: 0 auto;}
+      .parent {width: 60%; text-align: left;}
+      .child {width: 40%; text-align: right; display: flex; flex-direction: column; justify-content: center;}
+      .location {background-color: #fff; padding: 16px; margin-top: 4px; margin-bottom: 8px;}
+​
+      /* Part 3 */
+      .photo {background-color: #fff; display: block; overflow: hidden; box-sizing: border-box;}
+      .photo img {margin-top: 10px;}
+      .subway{text-align: left;}
+      .bus{text-align: left;}
+      .car{text-align: left;}
+      .detail {margin-top: 0px;}
+​
+      /* Part 4 */
+      .broom {padding: 16px; background-color: #fff; margin-top: 4px; color: #333333; font-size: 14px; cursor: pointer; }
+      .bride {padding: 16px; background-color: #fff; margin-top: 4px; color: #333333; font-size: 14px; cursor: pointer;}
+​
+      .bold {
+        font-weight: bold;
+      }
+​
+      .modal {
+        display: none;
+​
+        position: fixed;
+        z-index: 200;
+​
+        top: 50%;
+        left: 50%;
+​
+        transform: translate(-50%, -50%);
+​
+        max-width: 500px;
+        width: calc(100% - 40px);
+        height: 128px;
+​
+        margin: 0 auto;
+​
+        background-color: #ffffff;
+​
+        color: #333333;
+        font-size: 14px;
+      }
+​
+      .modal.visible {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 1;
+      }
+​
+      .dimmed {
+        display: none;
+​
+        position: fixed;
+        z-index: 100;
+​
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+​
+        background-color: rgba(0, 0, 0, .60);
+      }
+​
+      .dimmed.visible {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="background">
+      <div id="part1">
         <div class="title">
-            <div class="titletext">
-                 <h1>Park Munjae<br>Shin Haena</h1>
-                 <p class="couplename">박문재, 그리고 신해나</p>
-            </div>
-            <div class="titlephoto"><img src="img/img_01.jpg" height="100%" width="100%">
-            </div>
+          <div class="titletext">
+            <h1>Park Munjae<br />Shin Haena</h1>
+            <p class="couplename">박문재, 그리고 신해나</p>
+          </div>
+          <div class="titlephoto">
+            <img src="https://munjae-haena.com/img_01.jpg" height="100%" width="100%" />
+          </div>
         </div>
-     </div>
-     <div id="part2">
+      </div>
+      <div id="part2">
         <div class="info">
-            <div class="date">
-                <img class="dateimg" src="img/date.png" height="65px" width="39px">
-            </div>
-            <div class="message">
-                <p>초록빛이 싱그러운 한 여름에 만나
-                    <br>함께 맞이하는 세 번째 여름…
-                    <br>저희 두 사람 마음을 같이하여 같은 사랑을 가지고,
-                    <br>뜻을 합하여 부부로서 한마음을 품고자 합니다.
-                    <br>은혜 가운데 만난 저희 두 사람을 축복해 주시면 
-                    <br>더없는 기쁨으로 간직하겠습니다.</p>
-            </div>
-            <div class="name">
-              <div class="wrap">
-                <div class="parent">
-                    <p>박윤익 ∙ 조순점의 아들
-                        <br>신원식 ∙ 김미라의 딸
-                    </p>
-                </div>
-                <div class="child">
-                    <strong>박문재</strong>
-                    <strong>신해나</strong>
-                </div>
+          <div class="date">
+            <img class="dateimg" src="https://munjae-haena.com/date.png" height="65px" width="39px" />
+          </div>
+          <div class="message">
+            <p>
+              초록빛이 싱그러운 한 여름에 만나 <br />함께 맞이하는 세 번째 여름…
+              <br />저희 두 사람 마음을 같이하여 같은 사랑을 가지고, <br />뜻을
+              합하여 부부로서 한마음을 품고자 합니다. <br />은혜 가운데 만난
+              저희 두 사람을 축복해 주시면 <br />더없는 기쁨으로 간직하겠습니다.
+            </p>
+          </div>
+          <div class="name">
+            <div class="wrap">
+              <div class="parent">
+                <p>박윤익 ∙ 조순점의 아들 <br />신원식 ∙ 김미라의 딸</p>
+              </div>
+              <div class="child">
+                <strong>박문재</strong>
+                <strong>신해나</strong>
               </div>
             </div>
-            <div class="location">
-                <p>2021. 07. 03  토요일  오후 5시
-                    <br><strong>서울대학교 호암교수회관 웨딩홀</strong>
-                </p>
-            </div>
+          </div>
+          <div class="location">
+            <p>
+              2021. 07. 03 토요일 오후 5시 <br /><strong
+                >서울대학교 호암교수회관 웨딩홀</strong
+              >
+            </p>
+          </div>
         </div>
-     </div>
-     <div id="part3">
+      </div>
+      <div id="part3">
         <div class="photo">
-            <img src="img/img_03.jpg" height="100%" width="100%">
-            <img src="img/img_04.jpg" height="100%" width="100%">
-            <img src="img/img_05.jpg" height="100%" width="100%">
-            <img src="img/img_06.jpg" height="100%" width="100%">
-            <img src="img/img_07.jpg" height="100%" width="100%">
+          <img src="https://munjae-haena.com/img_03.jpg" height="100%" width="100%" />
+          <img src="https://munjae-haena.com/img_04.jpg" height="100%" width="100%" />
+          <img src="https://munjae-haena.com/img_05.jpg" height="100%" width="100%" />
+          <img src="https://munjae-haena.com/img_06.jpg" height="100%" width="100%" />
+          <img src="https://munjae-haena.com/img_07.jpg" height="100%" width="100%" />
         </div>
         <div class="pause">
-            <p>2021년 7월 3일
-                <br>문재와 해나의 기쁨이 가득한 여름 날
-            </p>
+          <p>2021년 7월 3일 <br />문재와 해나의 기쁨이 가득한 여름 날</p>
         </div>
-     </div>
-     <div id="part4">
+      </div>
+      <div id="part4">
         <div class="map">
-	    <div style="font:normal normal 400 12px/normal dotum, sans-serif; width:100%; max-width:460px; height:auto; color:#333; position:relative">
-	    	<div>
-		  <a href="https://map.kakao.com/?urlX=491131.0&amp;urlY=1102406.0&amp;itemId=1345523342&amp;q=%EC%84%9C%EC%9A%B8%EB%8C%80%ED%95%99%EA%B5%90%20%ED%98%B8%EC%95%94%EA%B5%90%EC%88%98%ED%9A%8C%EA%B4%80%20%EC%9B%A8%EB%94%A9%ED%99%80&amp;srcid=1345523342&amp;map_type=TYPE_MAP&amp;from=roughmap" target="_blank">
-            	  <img class="map" src="http://t1.daumcdn.net/roughmap/imgmap/adee939f72d9a7e62616f7ad2548c67c138d2bf97550ff3424d3f337d760e029" width="100%" max-height="460px" style="border:1px solid #ccc;">
-	          </a>
-                </div>
-            <div style="max-width: 460px; overflow: hidden; padding: 7px 11px; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 0px 0px 2px 2px; background-color: rgb(249, 249, 249); margin-bottom: 20px;">
-            	<a href="https://map.kakao.com" target="_blank" style="float: left;">
-            	<img src="//t1.daumcdn.net/localimg/localimages/07/2018/pc/common/logo_kakaomap.png" width="72" height="16" alt="카카오맵" style="display:block;width:72px;height:16px"></a>
-            	<div style="float: right; position: relative; top: 1px; font-size: 11px;">
-			<a target="_blank" href="https://map.kakao.com/?from=roughmap&amp;srcid=1345523342&amp;confirmid=1345523342&amp;q=%EC%84%9C%EC%9A%B8%EB%8C%80%ED%95%99%EA%B5%90%20%ED%98%B8%EC%95%94%EA%B5%90%EC%88%98%ED%9A%8C%EA%B4%80%20%EC%9B%A8%EB%94%A9%ED%99%80&amp;rv=on" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">로드뷰</a>
-			<span style="width: 1px;padding: 0;margin: 0 8px 0 9px;height: 11px;vertical-align: top;position: relative;top: 2px;border-left: 1px solid #d0d0d0;float: left;"></span>
-			<a target="_blank" href="https://map.kakao.com/?from=roughmap&amp;eName=%EC%84%9C%EC%9A%B8%EB%8C%80%ED%95%99%EA%B5%90%20%ED%98%B8%EC%95%94%EA%B5%90%EC%88%98%ED%9A%8C%EA%B4%80%20%EC%9B%A8%EB%94%A9%ED%99%80&amp;eX=491131.0&amp;eY=1102406.0" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">길찾기</a>
-			<span style="width: 1px;padding: 0;margin: 0 8px 0 9px;height: 11px;vertical-align: top;position: relative;top: 2px;border-left: 1px solid #d0d0d0;float: left;"></span>
-			<a target="_blank" href="https://map.kakao.com?map_type=TYPE_MAP&amp;from=roughmap&amp;srcid=1345523342&amp;itemId=1345523342&amp;q=%EC%84%9C%EC%9A%B8%EB%8C%80%ED%95%99%EA%B5%90%20%ED%98%B8%EC%95%94%EA%B5%90%EC%88%98%ED%9A%8C%EA%B4%80%20%EC%9B%A8%EB%94%A9%ED%99%80&amp;urlX=491131.0&amp;urlY=1102406.0" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">지도 크게 보기</a>
-	   	</div>
+          <div
+            style="
+              font: normal normal 400 12px / normal dotum, sans-serif;
+              width: 100%;
+              max-width: 460px;
+              height: auto;
+              color: #333;
+              position: relative;
+            "
+          >
+            <div>
+              <a
+                href="https://map.kakao.com/?urlX=491131.0&amp;urlY=1102406.0&amp;itemId=1345523342&amp;q=%EC%84%9C%EC%9A%B8%EB%8C%80%ED%95%99%EA%B5%90%20%ED%98%B8%EC%95%94%EA%B5%90%EC%88%98%ED%9A%8C%EA%B4%80%20%EC%9B%A8%EB%94%A9%ED%99%80&amp;srcid=1345523342&amp;map_type=TYPE_MAP&amp;from=roughmap"
+                target="_blank"
+              >
+                <img
+                  class="map"
+                  src="http://t1.daumcdn.net/roughmap/imgmap/adee939f72d9a7e62616f7ad2548c67c138d2bf97550ff3424d3f337d760e029"
+                  width="100%"
+                  max-height="460px"
+                  style="border: 1px solid #ccc"
+                />
+              </a>
             </div>
-	    </div>
-            <div class="subway">
-                <h3>지하철 &nbsp;|&nbsp; 2호선 낙성대 입구역 하차 (4번 출구)</h3>
-                <p class="detail">장블랑제리 제과점 옆에서 [관악 2번] 마을 버스 승차하여 호암교수회관에서 하차 </p>
-            </div>
-            <hr>
-            <div class="bus">
-                <h3>버스 &nbsp;|&nbsp; 낙성대 입구 하차</h3>
-                <p class="detail">461, 641, 5413, 5424, 5520, 5524, 5528 이용하여 낙성대 입구 하차. 장블랑제리 제과점 옆에서 [관악 2번] 마을 버스 승차 호암교수회관에서 하차 </p>
-            </div>
-            <hr>
-            <div class="car">
-                <h3>승용차 &nbsp;|&nbsp; 네비게이션 이용 시 호암교수회관으로 검색</h3>
-            </div>
-        </div>
-        <div class="footer">
-            <p>Marriages, like a garden, take time to grow.
-                <br>But the harvest is rich unto those who 
-                <br>patiently and tenderly care for the ground.
-            </p>
-        </div>
-        <div class="letter">
-            <h2>드리는 말씀</h2> 
-            <p> 저희의 결혼 소식이 마음 속 짐이 아닌 반가운 소식으로 전해지길 바라는 마음입니다. 혹여 참석이 어려우시더라도 부담 갖지 마시고 계신 곳에서 축복해주신다면 더 없는 격려가 될 것입니다. 모두의 건강과 안전을 위해 기도하며 준비하겠습니다. </p>
-        </div>
-        <div class="account">
-            <div class="broom">
-                <strong>신랑에게 마음 전하실 곳</strong>
-                <br>신한은행 110-095-732556 (박문재)
-            </div>
-            <div class="bride">
-                <strong>신부에게 마음 전하실 곳</strong>
-                <br>신한은행 110-355-387591 (신해나)
-            </div>
-        </div>
-     </div>
-   </div>  
- </body>
-</html>
+            <div style="
+                max-width: 460px;
+                overflow: hidden;
+                padding: 7px 11px;
+                border: 1px solid rgba(0, 0, 0, 0.1);
+                border-radius: 0px 0px 2px 2px;
+                background-color: rgb(249, 249, 249);
+                margin-bottom: 20px;
+              ">
+              <a href="https://map.kakao.com"
+                target="_blank"
+                style="float: left">
+                <img
+                  src="//t1.daumcdn.net/localimg/localimages/07/2018/pc/common/logo_kakaomap.png"
+                  width="72"
+                  height="16"
+                  alt="카카오맵"
+                  style="display: block; width: 72px; height: 16px"/></a>
+              <div
+                style="
+                  float: right;
+                  position: relative;
+                  top: 1px;
+                  font-size: 11px;
+                "
+              >
+                <a
+                  target="_blank"
+                  href="https://map.kakao.com/?from=roughmap&amp;srcid=1345523342&amp;confirmid=1345523342&amp;q=%EC%84%9C%EC%9A%B8%EB%8C%80%ED%95%99%EA%B5%90%20%ED%98%B8%EC%95%94%EA%B5%90%EC%88%98%ED%9A%8C%EA%B4%80%20%EC%9B%A8%EB%94%A9%ED%99%80&amp;rv=on"
+                  style="
+                    float: left;
+                    height: 15px;
+                    padding-top: 1px;
+                    line-height: 15px;
+                    color: #000;
+                    text-decoration: none;
+                  "
+                  >로드뷰</a
+                >
+                <span
+                  style="
+                    width: 1px;
+                    padding: 0;
+                    margin: 0 8px 0 9px;
+                    height: 11px;
+                    vertical-align: top;
+                    position: relative;
+                    top: 2px;
+                    border-left: 1px solid #d0d0d0;
+                    float: left;
+                  "
+                ></span>
+                <a
+                  target="_blank"
+                  href="https://map.kakao.com/?from=roughmap&amp;eName=%EC%84%9C%EC%9A%B8%EB%8C%80%ED%95%99%EA%B5%90%20%ED%98%B8%EC%95%94%EA%B5%90%EC%88%98%ED%9A%8C%EA%B4%80%20%EC%9B%A8%EB%94%A9%ED%99%80&amp;eX=491131.0&amp;eY=1102406.0"
+                  style="
+                    float: left;
+                    height: 15px;
+                    padding-top: 1px;
+                    line-height: 15px;
+                    color: #000;
+                    text-decoration: none;
+                  "
+                  >길찾기</a
+                >
+                <span
+                  style="
+                    width: 1px;
+                    padding: 0;
+                    margin: 0 8px 0 9px;
+                    height: 11px;
+                    vertical-align: top;
+                    position: relative;
+                    top: 2px;
+                    border-left: 1px solid #d0d0d0;
+                    float: left;
+                  "
+                ></span>
+                <a
+                  target="_blank"
+                  href="https://map.kakao.com?map_type=TYPE_MAP&amp;from=roughmap&...
